@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>米酒のBLOG</title>
+  
+  <subtitle>学习资料库</subtitle>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2022-02-19T18:32:45.701Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>米酒</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo个人博客部署记录</title>
+    <link href="http://example.com/2022/02/19/hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E8%AE%B0%E5%BD%95/"/>
+    <id>http://example.com/2022/02/19/hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E8%AE%B0%E5%BD%95/</id>
+    <published>2022-02-19T09:19:29.000Z</published>
+    <updated>2022-02-19T18:32:45.701Z</updated>
+    
+    <content type="html"><![CDATA[<img src="http://r7k847glj.hn-bkt.clouddn.com/mijiublog/hexopage.jpg" width="100%" height="50%">---<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><font color=#999AAA >hexo搭建个人博客过程及其中遇到的一些问题记录<h1 id="hexo简介及部署"><a href="#hexo简介及部署" class="headerlink" title="hexo简介及部署"></a>hexo简介及部署</h1><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。Hexo是一款基于Node.js的静态博客框架。</p><span id="more"></span><blockquote><p>中文官网<br><a href="https://blog.csdn.net/sinat_37781304/article/details/82729029">链接</a>.</p></blockquote><blockquote><p>   搭建教程- -from_csdn：<br><a href="https://blog.csdn.net/sinat_37781304/article/details/82729029">链接</a>.</p></blockquote><blockquote><p>   搭建教程- -from_知乎：<br><a href="https://zhuanlan.zhihu.com/p/26625249/">链接</a>.</p></blockquote><hr><h1 id="hexo主题"><a href="#hexo主题" class="headerlink" title="hexo主题"></a>hexo主题</h1><h2 id="next主题"><a href="#next主题" class="headerlink" title="next主题"></a>next主题</h2><h3 id="Next主题下载"><a href="#Next主题下载" class="headerlink" title="Next主题下载"></a>Next主题下载</h3><blockquote><p>   github地址：<br><a href="https://github.com/next-theme/hexo-theme-next.git">链接</a>.</p></blockquote><p>Clone blog到 themes文件夹下 </p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd blog</span><br><span class="line">$ git clone https:<span class="regexp">//gi</span>thub.com<span class="regexp">/next-theme/</span>hexo-theme-<span class="keyword">next</span> themes/<span class="keyword">next</span></span><br></pre></td></tr></table></figure><blockquote><p>   配置部署链接地址：<br><a href="http://theme-next.iissnan.com/getting-started.html">NexT主题文档</a>.<br><a href="https://www.jianshu.com/p/97e0c6a51809">简书-Hexo及Next主题配置（最新版）</a><br><a href="https://www.jianshu.com/p/f054333ac9e6">简书-hexo的next主题个性化教程:打造炫酷网站</a><br><a href="https://blog.csdn.net/sinat_37781304/article/details/82729029">CSDN-hexo史上最全搭建教程</a></p></blockquote><h3 id="Next主题部署问题"><a href="#Next主题部署问题" class="headerlink" title="Next主题部署问题"></a>Next主题部署问题</h3><ol><li>hexo -s 过程报错</li></ol><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">（<span class="keyword">node</span><span class="title">）Warning</span>: Accessing non-existent <span class="keyword">property</span><span class="title"> </span>‘xxx‘ of module exports inside circular depe</span><br></pre></td></tr></table></figure><blockquote><p><a href="http://theme-next.iissnan.com/getting-started.html">解决链接地址</a>.</p></blockquote><hr><ol start="2"><li>Hexo博客使用valine评论系统无效果及终极解决方案</li></ol><blockquote><p><a href="https://cloud.tencent.com/developer/article/1934191">解决方案</a></p></blockquote><h3 id="Next配置"><a href="#Next配置" class="headerlink" title="Next配置"></a>Next配置</h3><h4 id="front-matter"><a href="#front-matter" class="headerlink" title="front-matter"></a>front-matter</h4><blockquote><p><a href="https://zhuanlan.zhihu.com/p/78087948?from_voters_page=true">知乎-front-matter使用详解</a></p></blockquote><h4 id="添加评论和文章阅读量"><a href="#添加评论和文章阅读量" class="headerlink" title="添加评论和文章阅读量"></a>添加评论和文章阅读量</h4><p><strong>Valine</strong><br>Valine - 一款快速、简洁高效的无后端评论系统。<br>NexT 主题已经集成了 Valine 评论系统，只要填写一些参数即可使用</p><blockquote><p><a href="https://blog.csdn.net/qq_33302567/article/details/103693121">CSDN-Hexo NexT 主题添加评论和文章阅读量</a><br><a href="http://xinyufeng.net/2020/06/01/Hexo-Next%E4%B8%BB%E9%A2%98-%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/">Gitment 评论系统和Valine 评论系统</a></p></blockquote><hr><h1 id="butterfly主题"><a href="#butterfly主题" class="headerlink" title="butterfly主题"></a>butterfly主题</h1>]]></content>
+    
+    
+    <summary type="html">&lt;img src=&quot;http://r7k847glj.hn-bkt.clouddn.com/mijiublog/hexopage.jpg&quot; width=&quot;100%&quot; height=&quot;50%&quot;&gt;
+---
+
+&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;font color=#999AAA &gt;
+hexo搭建个人博客过程及其中遇到的一些问题记录
+
+&lt;h1 id=&quot;hexo简介及部署&quot;&gt;&lt;a href=&quot;#hexo简介及部署&quot; class=&quot;headerlink&quot; title=&quot;hexo简介及部署&quot;&gt;&lt;/a&gt;hexo简介及部署&lt;/h1&gt;&lt;p&gt;Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。Hexo是一款基于Node.js的静态博客框架。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="hexo" scheme="http://example.com/categories/hexo/"/>
+    
+    
+    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    
+    <category term="blog" scheme="http://example.com/tags/blog/"/>
+    
+  </entry>
+  
+</feed>
